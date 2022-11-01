@@ -62,14 +62,10 @@ html{
 
 .header {
     margin-bottom: 20px;
-
 }
 
 .header .container{
     height: 100px;
-}
-.header .container img:hover{
-    color: var(--Soft-red-color);
 }
 .header .container .nav-bar li{
     transition: 0.3s;
@@ -92,13 +88,19 @@ html{
     position: absolute;
     width: 0;
     bottom: -5px;
-    height: 3px;
+    height: 2px;
     background-color: red;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 .header .container .nav-bar li:hover a::before{
     width: 100%;
@@ -112,7 +114,8 @@ html{
     cursor: pointer;
 }
 @media (min-width: 768px){
-    .header .container .form{
+    .header .container .form,
+    .header .container .close-menu{
         display: none;
     }
 }
@@ -139,8 +142,9 @@ html{
         -ms-transition: 0.5s;
         -o-transition: 0.5s;
         flex-direction: column;
-        z-index: 1;
+        z-index: 99999;
 }
+  
     .header .container .nav-bar li{
         margin-bottom: 15px;
         margin-left: 15px;
@@ -155,10 +159,6 @@ html{
     } 
 }
 
-/* .header .container .form:hover + .nav-bar li{
-    margin-bottom: 15px;
-    margin-left: 15px;
-} */
 
 .home-page{
     position: relative;
