@@ -68,11 +68,11 @@ html{
     height: 100px;
 }
 .header .container .nav-bar li{
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 .header .container .nav-bar li a{
     color: var(---Gray-color);
@@ -90,11 +90,11 @@ html{
     bottom: -5px;
     height: 2px;
     background-color: red;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -159,6 +159,10 @@ html{
     } 
 }
 
+/* .header .container .form:hover + .nav-bar li{
+    margin-bottom: 15px;
+    margin-left: 15px;
+} */
 
 .home-page{
     position: relative;
